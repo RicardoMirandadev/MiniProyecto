@@ -7,72 +7,141 @@
     <title>Mi Portfolio</title>
     <link rel="stylesheet" href="./style.css">
   </head>
-   <body>
-  <header class="bg-dark text-light">
-    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-8 py-4 bg-dark">
+  <body>
+
+  <header>
+    <nav class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-6 py-4 bg-dark">
       <div class="text-highlight font-bold text-sm tracking-widest">PORTFOLIO</div>
-      <ul class="flex gap-8 list-none">
-        <li><a href="#about" class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">About Me</a></li>
-        <li><a href="#skills" class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Skills</a></li>
+
+      <ul class="hidden md:flex gap-8 list-none">
+        <li><a href="#about"    class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">About Me</a></li>
+        <li><a href="#skills"   class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Skills</a></li>
         <li><a href="#projects" class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Projects</a></li>
       </ul>
-      <button class="bg-highlight text-dark px-5 py-2 rounded-full font-bold text-xs tracking-widest">CONTACT</button>
+
+
+      <button class="hidden md:block bg-highlight text-dark px-5 py-2 rounded-full font-bold text-xs tracking-widest">
+        CONTACT
+      </button>
+
+
+      <button class="md:hidden text-light text-2xl" id="menu-btn">☰</button>
     </nav>
+
+
+    <ul id="mobile-menu" class="hidden fixed top-16 left-0 right-0 z-40 flex-col gap-4 bg-dark px-8 py-6 list-none md:hidden">
+      <li><a href="#about"    class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">About Me</a></li>
+      <li><a href="#skills"   class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Skills</a></li>
+      <li><a href="#projects" class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Projects</a></li>
+      <li><a href="#contact"  class="text-highlight text-xs uppercase tracking-widest font-bold">Contact</a></li>
+    </ul>
   </header>
-  <main >
-<section id="hero" class="flex flex-col justify-center items-center text-center pt-32 pb-20 min-h-screen" style="background: linear-gradient(135deg, #1E293B 0%, #0D1117 100%);">
-      <p class="text-light text-6xl font-bold">I'm <span class="text-highlight italic">Ricardo José Miranda Morales</span></p>
-      <img src="./public/ricardo.png" alt="Ricardo" class="w-80 mb-8 drop-shadow-[0_0_85px_#E3FF6A]">
-      <h1 class="text-light text-6xl font-bold mt-2">Front-end Developer</h1>
-      <a href="#projects" class="mt-8 bg-highlight text-dark px-8 py-3 rounded-full font-bold text-sm tracking-widest hover:scale-105 transition-transform">MY PROJECTS</a>
+
+  <main>
+
+
+    <section id="hero"
+      class="flex flex-col justify-center items-center text-center pt-28 pb-16 min-h-screen px-6"
+      style="background: linear-gradient(135deg, #1E293B 0%, #0D1117 100%);">
+
+
+      <p class="text-light text-2xl md:text-5xl lg:text-6xl font-bold">
+        I'm <span class="text-highlight italic">Ricardo José Miranda Morales</span>
+      </p>
+
+
+      <img src="./public/ricardo.png" alt="Ricardo"
+        class="w-48 md:w-80 my-6 drop-shadow-[0_0_85px_#E3FF6A]">
+
+      <h1 class="text-light text-2xl md:text-5xl lg:text-6xl font-bold mt-2">
+        Front-end Developer
+      </h1>
+
+      <a href="#projects"
+        class="mt-8 bg-highlight text-dark px-8 py-3 rounded-full font-bold text-sm tracking-widest hover:scale-105 transition-transform">
+        MY PROJECTS
+      </a>
     </section>
-  </main>
-    <section id="about" class="py-20 px-8 flex flex-col items-center text-center bg-dark">
+
+
+    <section id="about" class="py-20 px-4 md:px-8 flex flex-col items-center text-center bg-dark">
       <h2 class="text-highlight text-3xl font-bold mb-6">WHO AM I?</h2>
-      <p class="text-soft-gray max-w-lg text-sm leading-relaxed mb-4">I am a front-end website developer specialized in javascript.I enjoy building modern interfaces with TailwindCSS.</p>
-      <p class="text-soft-gray max-w-lg text-sm leading-relaxed mb-8">Programming is my passion. Additionally I like to play PC games and 3d print in my leisure time.</p>
-      <a href="#projects" class="border border-highlight text-highlight px-6 py-3 rounded-full font-bold text-xs tracking-widest hover:bg-highlight hover:text-dark">SHOW MY PROJECTS</a>
+      <p class="text-soft-gray max-w-lg text-sm leading-relaxed mb-4">
+        I am a front-end website developer specialized in javascript. I enjoy building modern interfaces with TailwindCSS.
+      </p>
+      <p class="text-soft-gray max-w-lg text-sm leading-relaxed mb-8">
+        Programming is my passion. Additionally I like to play PC games and 3d print in my leisure time.
+      </p>
+      <a href="#projects"
+        class="border border-highlight text-highlight px-6 py-3 rounded-full font-bold text-xs tracking-widest hover:bg-highlight hover:text-dark">
+        SHOW MY PROJECTS
+      </a>
     </section>
-    <section id="skills" class="py-20 px-8 bg-dark">
-      <h2 class="text-highlight text-3xl font-bold text-center mb-10">MY SKILLS</h2>
 
-      <div class="flex justify-center gap-4 flex-wrap max-w-2xl mx-auto">
-        <div class="bg-deep-blue p-6 rounded-lg w-20 h-20 flex items-center justify-center text-red-500 font-bold text-2xl">H5</div>
-        <div class="bg-deep-blue p-6 rounded-lg w-20 h-20 flex items-center justify-center text-yellow-400 font-bold text-2xl">JS</div>
-        <div class="bg-deep-blue p-6 rounded-lg w-20 h-20 flex items-center justify-center text-orange-500 font-bold text-1xl">Blender</div>
-        <div class="bg-deep-blue p-6 rounded-lg w-20 h-20 flex items-center justify-center text-blue-300 font-bold text-2xl">Tw</div>
-        <div class="bg-deep-blue p-6 rounded-lg w-20 h-20 flex items-center justify-center text-white-500 font-bold text-1xl">Unreal Engine</div>
-        <div class="bg-deep-blue p-6 rounded-lg w-20 h-20 flex items-center justify-center text-blue-600 font-bold text-1xl">css</div>
+<section id="skills" class="py-20 px-4 md:px-8 bg-dark flex flex-col items-center">
+  <h2 class="text-highlight text-3xl font-bold text-center mb-10">MY SKILLS</h2>
+    <div class="grid gap-3 w-full grid-cols-3 lg:grid-cols-5 lg:auto-rows-fr">
+    <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center text-red-500 font-bold text-2xl">H5</div>
+    <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center text-yellow-400 font-bold text-2xl">JS</div>
+    <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center text-orange-500 font-bold text-xs text-center px-2">Blender</div>
+    <div class="hidden lg:flex bg-deep-blue rounded-lg aspect-square lg:aspect-auto items-center justify-center text-blue-300 font-bold text-2xl">Tw</div>
+    <div class="col-span-3 lg:col-span-1 lg:row-span-2  bg-deep-blue rounded-lg flex flex-col items-center justify-center text-center p-4 gap-2">
+      <p class="text-light text-4xl font-bold">4</p>
+      <p class="text-soft-gray text-xs leading-snug mb-2">Weeks<br/>Experience<br/>Working</p>
+      <a href="#" class="inline-block border border-highlight text-highlight px-2 py-1 rounded font-bold text-xs tracking-wide hover:bg-highlight hover:text-dark">
+        DOWNLOAD MY CV
+      </a>
+    </div>
+    <div class="bg-deep-blue rounded-lg aspect-square lg:aspect-auto flex items-center justify-center text-white font-bold text-xs text-center px-2">Unreal Engine</div>
+    <div class="bg-deep-blue rounded-lg aspect-square lg:aspect-auto flex items-center justify-center text-blue-600 font-bold text-xl">CSS</div>
+    <div class="bg-deep-blue rounded-lg aspect-square lg:aspect-auto flex items-center justify-center text-white font-bold text-xs text-center px-2">+Skill</div>
+    <div class="hidden lg:flex bg-deep-blue rounded-lg aspect-square items-center justify-center text-white font-bold text-xs text-center px-2">+Skill</div>
+
+  </div>
+
+  <div class="mt-6 w-full max-w-lg lg:max-w-2xl bg-deep-blue rounded-xl px-8 py-6 flex flex-col items-center gap-4">
+    <h3 class="text-highlight text-xs font-bold tracking-widest uppercase">Additional Skills</h3>
+    <div class="flex flex-wrap justify-center gap-6">
+      <span class="text-soft-gray text-xs font-bold">Bootstrap</span>
+      <span class="text-soft-gray text-xs font-bold">Axios</span>
+      <span class="text-soft-gray text-xs font-bold">Redux</span>
+      <span class="text-soft-gray text-xs font-bold">MUI</span>
+      <span class="text-soft-gray text-xs font-bold">Firebase</span>
+      <span class="text-soft-gray text-xs font-bold">WordPress</span>
+      <span class="text-soft-gray text-xs font-bold">Framer</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="py-20 px-8 md:px-16 lg:px-24 bg-dark">
+ <div class="flex flex-col lg:flex-row items-center justify-center gap-16 max-w-4xl mx-auto">
+    
+    <div class="flex flex-col gap-6 lg:w-auto">
+      <h2 class="text-light text-center text-3xl font-bold ">THE WORKS CLOSEST TO MY HEART</h2>
+      <a href="#" class="w-full text-center bg-highlight text-dark px-6 py-3 rounded-full font-bold text-xs tracking-widest hover:scale-105 transition-transform lg:mt-auto">
+        SHOW MY PROJECTS
+      </a>
+    </div>
+
+    <div class="flex gap-3 lg:w-1/2 justify-center">
+      <div class="bg-deep-blue rounded-xl overflow-hidden w-40 h-64 flex items-end p-4 flex-shrink-0">
+        <p class="text-light text-sm font-bold">Soldering</p>
       </div>
+      <div class="bg-[#2a3a2a] rounded-xl overflow-hidden w-28 h-64 flex-shrink-0"></div>
+      <div class="bg-[#1a2a3a] rounded-xl overflow-hidden w-28 h-64 flex-shrink-0"></div>
+    </div>
 
-      <div class="text-center mt-10">
-        <p class="text-light text-5xl font-bold">4</p>
-        <p class="text-soft-gray text-sm mt-2"> weeks Experience Working</p>
-        <a href="#" class="mt-4 inline-block bg-highlight text-dark px-6 py-2 rounded-full font-bold text-xs tracking-widest">DOWNLOAD MY CV</a>
-      </div>
-    </section>
-    <section id="projects" class="py-20 px-8 bg-dark">
-      <h2 class="text-highlight text-3xl font-bold mb-10">THE WORKS CLOSEST TO MY HEART</h2>
+  </div>
+</section>
 
-      <div class="flex gap-4">
-        <div class="bg-deep-blue rounded-xl overflow-hidden w-48 h-64 flex items-end p-4">
-          <p class="text-light text-sm font-bold">Soldering</p>
-        </div>
-        <div class="bg-[#2a3a2a] rounded-xl overflow-hidden w-32 h-64"></div>
-        <div class="bg-[#1a2a3a] rounded-xl overflow-hidden w-32 h-64"></div>
-      </div>
+<section id="contact" class="py-20 px-8 bg-dark flex justify-center">
+  <div class="bg-white rounded-2xl p-10 w-full max-w-4xl flex flex-col gap-4">
+    <h2 class="text-dark text-3xl font-bold text-center mb-10">LET'S HAVE A CHAT</h2>
+    <input type="text"   placeholder="YOUR NAME"     class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full">
+    <input type="email"  placeholder="EMAIL ADDRESS" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full">
+    <textarea placeholder="CHAT HERE"                class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full h-32 resize-none"></textarea>
+    <button class="bg-highlight text-dark py-4 rounded-lg font-bold text-sm tracking-widest w-full">SUBMIT HERE</button>
+  </div>
+</section>
 
-      <a href="#" class="mt-8 inline-block border border-highlight text-highlight px-6 py-3 rounded-full font-bold text-xs tracking-widest hover:bg-highlight hover:text-dark">SHOW MY PROJECTS</a>
-    </section>
-    <section id="contact" class="py-20 px-8 bg-white">
-      <h2 class="text-dark text-3xl font-bold text-center mb-10">LET'S HAVE A CHAT</h2>
-
-      <div class="max-w-xl mx-auto flex flex-col gap-4">
-        <input type="text" placeholder="YOUR NAME" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full">
-        <input type="email" placeholder="EMAIL ADDRESS" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full">
-        <textarea placeholder="CHAT HERE" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full h-32 resize-none"></textarea>
-        <button class="bg-highlight text-dark py-4 rounded-lg font-bold text-sm tracking-widest w-full">SUBMIT HERE</button>
-      </div>
-    </section>
-  </body>
-</html>
+  </main>
