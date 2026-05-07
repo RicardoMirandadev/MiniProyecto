@@ -143,5 +143,13 @@
     <button class="bg-highlight text-dark py-4 rounded-lg font-bold text-sm tracking-widest w-full">SUBMIT HERE</button>
   </div>
 </section>
-
-  </main>
+</main>
+<script>
+    const btn = document.getElementById('menu-btn')
+    const menu = document.getElementById('mobile-menu')
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'))
+    menu.querySelectorAll('a').forEach(link =>
+      link.addEventListener('click', () => menu.classList.add('hidden'))
+    )
+  </script>
+</body>
