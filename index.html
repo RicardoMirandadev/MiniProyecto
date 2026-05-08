@@ -50,8 +50,8 @@
       </p>
 
 
-      <img src="../ricardo.png" alt="Ricardo"
-        class="w-48 md:w-80 my-6 drop-shadow-[0_0_85px_#E3FF6A]">
+      <img src="/ricardo.png" alt="Ricardo"
+        class="w-52 md:w-90 mt-1 lg:w-120 drop-shadow-[0_0_85px_#E3FF6A]">
 
       <h1 class="text-light text-2xl md:text-5xl lg:text-6xl font-bold mt-2">
         Front-end Developer
@@ -64,11 +64,15 @@
     </section>
 
 
-    <section id="about" class="py-20 px-4 md:px-8 flex flex-col items-center text-center bg-dark">
+    <section id="about" class="py-20 px-4 relative min-h-screen md:px-8 flex flex-col items-center text-center bg-dark">
+      <div class="relative z-10">
       <h2 class="text-highlight text-3xl font-bold mb-6">WHO AM I?</h2>
-      <p class="text-soft-gray max-w-lg text-sm leading-relaxed mb-4">
-        I am a front-end website developer specialized in javascript. I enjoy building modern interfaces with TailwindCSS.
-      </p>
+      <p class="text-soft-gray max-w-lg justify-center text-sm leading-relaxed mb-4">I'm a Guatemalan multimedia producer, fixer, and maker working at the intersection of technology, visual storytelling, and hands-on fabrication.
+My work has been published internationally. I've served as a field photographer for IPS (Inter Press Service), with credited work covering human rights stories in Guatemala. I also worked as a production fixer on a documentary commissioned by the Royal Albert Memorial Museum (RAMM) in Exeter, England — a bilingual film about Maya weavers from Santa Catarina Palopó that now forms part of their permanent Latin America gallery.
+On the technology side, I'm currently training as a frontend developer through Funval, with multiple projects deployed on Vercel and published on GitHub. I've also independently developed an MVP for a CRM/TMS system for a logistics operation — built from scratch, still in active development.
+Beyond screens, I build things physically. I work with embedded systems (ESP32, Arduino), IoT automation, 3D printing, electronics prototyping, and fabrication. My projects range from smart automation systems to custom-built tools — designed, tested, and assembled by hand.
+I don't specialize in one lane. I understand production, technology, and fabrication well enough to connect them — and that's where I do my best work.
+Based in Guatemala. Available for field production, fixation, photography, and technical projects.</p>
       <p class="text-soft-gray max-w-lg text-sm leading-relaxed mb-8">
         Programming is my passion. Additionally I like to play PC games and 3d print in my leisure time.
       </p>
@@ -76,6 +80,15 @@
         class="border border-highlight text-highlight px-6 py-3 rounded-full font-bold text-xs tracking-widest hover:bg-highlight hover:text-dark">
         SHOW MY PROJECTS
       </a>
+      </div>
+      <div class="md:hidden flex flex-col items-center gap-4 mt-8">
+        <img src="./public/foto.jpg" class="w-48 rounded-2xl">
+        <img src="./public/20180716_131207.jpg" class="w-48 rounded-2xl">
+        <img src="./public/free.JPG" class="w-48 rounded-2xl">
+      </div>
+      <img src="./public/foto.jpg" class="hidden md:block absolute top-33 left-3 w-32 lg:top-36 lg:left-89 lg:w-43 rounded-2xl rotate-[-8deg] ">
+      <img src="./public/20180716_131207.jpg" class="hidden md:block absolute top:20 right-8 w-46 lg:top-38 lg:right-78 lg:w-46 rounded-2xl rotate-[6deg]">
+      <img src="./public/free.JPG" class="hidden md:block absolute bottom-9 left-9 w-34 lg:bottom-36 lg:left-99 lg:w-44 rounded-2xl rotate-[-4deg]">
     </section>
 
 <section id="skills" class="py-20 px-4 md:px-8 bg-dark flex flex-col items-center">
@@ -113,28 +126,35 @@
   </div>
 </section>
 
-<section id="projects" class="py-20 px-8 md:px-16 lg:px-24 bg-dark">
+<section id="projects" class="py-20 px-8 flex relative flex-col justify-center md:px-16 min-h-screen lg:px-24  bg-dark">
  <div class="flex flex-col lg:flex-row items-center justify-center gap-16 max-w-4xl mx-auto">
     
     <div class="flex flex-col gap-6 lg:w-auto">
       <h2 class="text-light text-center text-3xl font-bold ">THE WORKS CLOSEST TO MY HEART</h2>
-      <a href="#" class="w-full text-center bg-highlight text-dark px-6 py-3 rounded-full font-bold text-xs tracking-widest hover:scale-105 transition-transform lg:mt-auto">
+      <a href="#" class="z-10 text-center bg-highlight text-dark px-6 py-2 rounded-full font-bold text-xs tracking-widest hover:scale-105 transition-transform lg:mt-auto">
         SHOW MY PROJECTS
       </a>
     </div>
 
-    <div class="flex gap-3 lg:w-1/2 justify-center">
-      <div class="bg-deep-blue rounded-xl overflow-hidden w-40 h-64 flex items-end p-4 flex-shrink-0">
-        <p class="text-light text-sm font-bold">Soldering</p>
+    <div class="flex flex-col md:flex-row gap-3 lg:w-1/2 w-full md:w-1/2 justify-center">
+      
+      <div class="bg-deep-blue relative rounded-xl overflow-hidden w-full lg:w-60 h-64 flex items-end p-4 flex-shrink-0">
+        <img src="./public/hig.jpg" alt="trabajo de soldadura en altura" class=" w-full h-full object-cover absolute inset-0">
+        <p class="text-light text-sm font-bold absolute">Soldering</p>
       </div>
-      <div class="bg-[#2a3a2a] rounded-xl overflow-hidden w-28 h-64 flex-shrink-0"></div>
-      <div class="bg-[#1a2a3a] rounded-xl overflow-hidden w-28 h-64 flex-shrink-0"></div>
+      <div class="bg-[#2a3a2a] rounded-xl relative overflow-hidden w-full lg:w-40 h-64 flex items-end p-3 flex-shrink-0">
+      <img src="./public/foto.jpg" alt="fotografo" class=" w-full h-full object-cover absolute inset-0">
+        <p class="text-light text-sm font-bold absolute">potho</p>
+        </div>
+      <div class="bg-[#2a3a2a] rounded-xl relative overflow-hidden w-full lg:w-40 h-64 flex items-end p-3 flex-shrink-0">
+      <img src="./public/work.jpg" alt="trabajo de obrero" class=" w-full h-full object-cover absolute inset-0">
+        <p class="text-light text-sm font-bold absolute">work</p>
     </div>
 
   </div>
 </section>
 
-<section id="contact" class="py-20 px-8 bg-dark flex justify-center ">
+<section id="contact" class="py-20 min-h-screen px-8 bg-dark flex justify-center ">
   <div class="bg-white rounded-2xl p-10 w-full  lg:max-w-3/4 flex flex-col gap-4">
     <h2 class="text-dark text-3xl font-bold text-center mb-10">LET'S HAVE A CHAT</h2>
     <input type="text"   placeholder="YOUR NAME"     class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full text-center lg:text-left">
