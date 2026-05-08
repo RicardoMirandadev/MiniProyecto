@@ -37,7 +37,7 @@
     </ul>
   </header>
 
-  <main>
+  <main class="overflow-x-hidden">
 
 
     <section id="hero"
@@ -50,7 +50,7 @@
       </p>
 
 
-      <img src="./public/ricardo.png" alt="Ricardo"
+      <img src="../ricardo.png" alt="Ricardo"
         class="w-48 md:w-80 my-6 drop-shadow-[0_0_85px_#E3FF6A]">
 
       <h1 class="text-light text-2xl md:text-5xl lg:text-6xl font-bold mt-2">
@@ -80,12 +80,12 @@
 
 <section id="skills" class="py-20 px-4 md:px-8 bg-dark flex flex-col items-center">
   <h2 class="text-highlight text-3xl font-bold text-center mb-10">MY SKILLS</h2>
-    <div class="grid gap-3 w-full grid-cols-3 lg:grid-cols-5 lg:auto-rows-fr">
+    <div class="grid gap-3 w-full grid-cols-3 lg:grid-cols-6 lg:auto-rows-fr lg:max-w-7/8">
     <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center text-red-500 font-bold text-2xl">H5</div>
     <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center text-yellow-400 font-bold text-2xl">JS</div>
     <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center text-orange-500 font-bold text-xs text-center px-2">Blender</div>
     <div class="hidden lg:flex bg-deep-blue rounded-lg aspect-square lg:aspect-auto items-center justify-center text-blue-300 font-bold text-2xl">Tw</div>
-    <div class="col-span-3 lg:col-span-1 lg:row-span-2  bg-deep-blue rounded-lg flex flex-col items-center justify-center text-center p-4 gap-2">
+    <div class="col-span-3 lg:col-span-2 lg:row-span-2  bg-deep-blue rounded-lg flex flex-col items-center justify-center text-center p-4 gap-2">
       <p class="text-light text-4xl font-bold">4</p>
       <p class="text-soft-gray text-xs leading-snug mb-2">Weeks<br/>Experience<br/>Working</p>
       <a href="#" class="inline-block border border-highlight text-highlight px-2 py-1 rounded font-bold text-xs tracking-wide hover:bg-highlight hover:text-dark">
@@ -134,13 +134,13 @@
   </div>
 </section>
 
-<section id="contact" class="py-20 px-8 bg-dark flex justify-center">
-  <div class="bg-white rounded-2xl p-10 w-full max-w-4xl flex flex-col gap-4">
+<section id="contact" class="py-20 px-8 bg-dark flex justify-center ">
+  <div class="bg-white rounded-2xl p-10 w-full  lg:max-w-3/4 flex flex-col gap-4">
     <h2 class="text-dark text-3xl font-bold text-center mb-10">LET'S HAVE A CHAT</h2>
-    <input type="text"   placeholder="YOUR NAME"     class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full">
-    <input type="email"  placeholder="EMAIL ADDRESS" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full">
-    <textarea placeholder="CHAT HERE"                class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full h-32 resize-none"></textarea>
-    <button class="bg-highlight text-dark py-4 rounded-lg font-bold text-sm tracking-widest w-full">SUBMIT HERE</button>
+    <input type="text"   placeholder="YOUR NAME"     class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full text-center lg:text-left">
+    <input type="email"  placeholder="EMAIL ADDRESS" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full text-center lg:text-left">
+    <textarea placeholder="CHAT HERE"                class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full h-32 resize-none text-center lg:text-left"></textarea>
+    <button class="bg-highlight text-dark py-4 rounded-lg font-bold text-sm w-full lg:items-center lg:max-w-5/8 mx-auto text-center ">SUBMIT HERE</button>
   </div>
 </section>
 </main>
