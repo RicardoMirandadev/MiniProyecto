@@ -159,6 +159,7 @@ Based in Guatemala. Available for field production, fixation, photography, and t
     </section>
 
 <section id="skills" class="py-20 px-4 md:px-8 bg-dark flex flex-col items-center">
+  <div id="lista-habilidades"></div>
   <h2 class="text-highlight text-3xl font-bold text-center mb-10">MY SKILLS</h2>
     <div class="grid gap-3 w-full grid-cols-3 lg:grid-cols-6 lg:auto-rows-fr lg:max-w-7/8">
     <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center">
@@ -230,12 +231,12 @@ Based in Guatemala. Available for field production, fixation, photography, and t
 </section>
 
 <section id="contact" class="py-20 min-h-screen px-8 bg-dark flex justify-center ">
-  <div class="bg-white rounded-2xl p-10 w-full  lg:max-w-3/4 flex flex-col gap-4">
+  <div class="bg-white rounded-2xl p-10 w-full lg:max-w-3/4 flex flex-col gap-4">
     <h2 class="text-dark text-3xl font-bold text-center mb-10">LET'S HAVE A CHAT</h2>
-    <input type="text"   placeholder="YOUR NAME"     class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full text-center lg:text-left">
-    <input type="email"  placeholder="EMAIL ADDRESS" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full text-center lg:text-left">
-    <textarea placeholder="CHAT HERE"                class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full h-32 resize-none text-center lg:h-75 lg:text-left"></textarea>
-    <button class="bg-highlight text-dark py-4 rounded-lg font-bold text-sm w-full lg:items-center lg:max-w-5/8 mx-auto text-center transition-all duration-300 hover:scale-105 hover:bg-yellow-400">SUBMIT HERE</button>
+    <input type="text" id="nombre" placeholder="YOUR NAME" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full text-center lg:text-left">
+    <input type="email" id="email" placeholder="EMAIL ADDRESS" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full text-center lg:text-left">
+    <textarea id="mensaje" placeholder="CHAT HERE" class="bg-gray-100 text-dark px-4 py-4 rounded-lg outline-none text-sm w-full h-32 resize-none text-center lg:h-75 lg:text-left"></textarea>
+    <button id="enviar" class="bg-highlight text-dark py-4 rounded-lg font-bold text-sm w-full lg:items-center lg:max-w-5/8 mx-auto text-center transition-all duration-300 hover:scale-105 hover:bg-yellow-400">SUBMIT HERE</button>
   </div>
 </section>
 <footer class="bg-black justify-center pt-4">
@@ -269,12 +270,5 @@ Based in Guatemala. Available for field production, fixation, photography, and t
       </div>
 </footer>
 </main>
-<script>
-    const btn = document.getElementById('menu-btn')
-    const menu = document.getElementById('mobile-menu')
-    btn.addEventListener('click', () => menu.classList.toggle('hidden'))
-    menu.querySelectorAll('a').forEach(link =>
-      link.addEventListener('click', () => menu.classList.add('hidden'))
-    )
-  </script>
+  <script src="./habilidades.js"></script>
 </body>
