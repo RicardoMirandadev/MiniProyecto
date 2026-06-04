@@ -28,7 +28,7 @@ misProyectos.forEach((proyecto) => {
         <img src="${proyecto.imagen}" alt="${proyecto.titulo}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
       </div>
       <div class="p-6">
-        <h3 class="text-light text-xl font-bold mb-2 text-highlight">${proyecto.titulo}</h3>
+        <h3 class="text-light text-xl font-bold mb-2 ">${proyecto.titulo}</h3>
         <p class="text-soft-gray text-sm leading-relaxed">${proyecto.descripcion}</p>
       </div>
     </div>
