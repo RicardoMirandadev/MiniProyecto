@@ -16,7 +16,7 @@
       <ul class="hidden md:flex gap-8 list-none">
         <li><a href="#about"    class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">About Me</a></li>
         <li><a href="#skills"   class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Skills</a></li>
-        <li><a href="#projects" class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Projects</a></li>
+        <li><a href="proyectos.html" class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Projects</a></li>
       </ul>
 
 
@@ -32,7 +32,7 @@
     <ul id="mobile-menu" class="hidden fixed top-16 left-0 right-0 z-40 flex-col gap-4 bg-dark px-8 py-6 list-none md:hidden">
       <li><a href="#about"    class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">About Me</a></li>
       <li><a href="#skills"   class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Skills</a></li>
-      <li><a href="#projects" class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Projects</a></li>
+      <li><a href="proyectos.html" class="text-soft-gray text-xs uppercase tracking-widest hover:text-light">Projects</a></li>
       <li><a href="#contact"  class="text-highlight text-xs uppercase tracking-widest font-bold">Contact</a></li>
     </ul>
   </header>
@@ -159,45 +159,62 @@ Based in Guatemala. Available for field production, fixation, photography, and t
     </section>
 
 <section id="skills" class="py-20 px-4 md:px-8 bg-dark flex flex-col items-center">
-  <div id="lista-habilidades"></div>
+
   <h2 class="text-highlight text-3xl font-bold text-center mb-10">MY SKILLS</h2>
     <div class="grid gap-3 w-full grid-cols-3 lg:grid-cols-6 lg:auto-rows-fr lg:max-w-7/8">
-    <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center">
-      <img src="/Icons8/icons8-html-5-50.png" class="lg:h-30 lg:w-30" alt="html5">
-    </div>
-    <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center">
-      <img src="/Icons8/icons8-adobe-illustrator-50.png" class="lg:h-30 lg:w-30" alt="Adobe ilustrator">
-    </div>
-    <div class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center">
-      <img src="/Icons8/icons8-adobe-photoshop-50.png" class="lg:h-30 lg:w-30" alt="Adobe Photoshop">
-    </div>
-    <div class="hidden lg:flex bg-deep-blue rounded-lg aspect-square lg:aspect-auto items-center justify-center">
-      <img src="/Icons8/icons8-adobe-premiere-pro-50.png" class="lg:h-30 lg:w-30" alt="Adobe Premier">
-    </div>
-    <div class="col-span-3 lg:col-span-2 lg:row-span-2  bg-deep-blue rounded-lg flex flex-col items-center justify-center text-center p-4 gap-2">
-      <p class="text-light text-4xl font-bold">4</p>
-      <p class="text-soft-gray text-xs leading-snug mb-2">Weeks<br/>Experience<br/>Working</p>
-      <a href="#" class="inline-block border border-highlight text-highlight px-2 py-1 rounded font-bold text-xs tracking-wide hover:bg-highlight hover:text-dark">
-        DOWNLOAD MY CV
-      </a>
-    </div>
-    <div class="bg-deep-blue rounded-lg aspect-square lg:aspect-auto flex items-center justify-center "><img src="/Icons8/icons8-github-50.png" alt="Github" class="lg:h-30 lg:w-30"></div>
-    <div class="bg-deep-blue rounded-lg aspect-square lg:aspect-auto flex items-center justify-center "><img src="/Icons8/icons8-css3-50.png" alt="CSS" class="lg:h-30 lg:w-30"></div>
-    <div class="bg-deep-blue rounded-lg aspect-square lg:aspect-auto flex items-center justify-center "><img src="/Icons8/icons8-git-50.png" alt="Git" class="lg:h-30 lg:w-30"></div>
-    <div class="hidden lg:flex bg-deep-blue rounded-lg aspect-square items-center justify-center"><img src="/Icons8/icons8-js-96.png" alt="javascript" class="lg:h-30 lg:w-30"></div>
-
+  
+  <div id="skill-html" class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex flex-col items-center justify-center p-2">
+    <img src="/Icons8/icons8-html-5-50.png" class="lg:h-30 lg:w-30" alt="html5">
   </div>
+  
+  <div id="skill-ailustrator" class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center">
+    <img src="/Icons8/icons8-adobe-illustrator-50.png" class="lg:h-30 lg:w-30" alt="Adobe ilustrator">
+  </div>
+  
+  <div id="skill-photoshop" class="bg-deep-blue rounded-lg lg:aspect-auto aspect-square flex items-center justify-center">
+    <img src="/Icons8/icons8-adobe-photoshop-50.png" class="lg:h-30 lg:w-30" alt="Adobe Photoshop">
+  </div>
+  
+  <div id="skill-premier" class="hidden lg:flex bg-deep-blue rounded-lg aspect-square lg:aspect-auto items-center justify-center">
+    <img src="/Icons8/icons8-adobe-premiere-pro-50.png" class="lg:h-30 lg:w-30" alt="Adobe Premier">
+  </div>
+  
+  <div class="col-span-3 lg:col-span-2 lg:row-span-2 bg-deep-blue rounded-lg flex flex-col items-center justify-center text-center p-4 gap-2">
+    <p class="text-light text-4xl font-bold">4</p>
+    <p class="text-soft-gray text-xs leading-snug mb-2">Weeks<br/>Experience<br/>Working</p>
+    <a href="#" class="inline-block border border-highlight text-highlight px-2 py-1 rounded font-bold text-xs tracking-wide hover:bg-highlight hover:text-dark">
+      DOWNLOAD MY CV
+    </a>
+  </div>
+  
+  <div id="skill-github" class="bg-deep-blue rounded-lg aspect-square lg:aspect-auto flex items-center justify-center">
+    <img src="/Icons8/icons8-github-50.png" alt="Github" class="lg:h-30 lg:w-30">
+  </div>
+  
+  <div id="skill-css" class="bg-deep-blue rounded-lg aspect-square lg:aspect-auto flex flex-col items-center justify-center p-2">
+    <img src="/Icons8/icons8-css3-50.png" alt="CSS" class="lg:h-30 lg:w-30">
+  </div>
+  
+  <div id="skill-git" class="bg-deep-blue rounded-lg aspect-square lg:aspect-auto flex flex-col items-center justify-center p-2">
+    <img src="/Icons8/icons8-git-50.png" alt="Git" class="lg:h-30 lg:w-30">
+  </div>
+  
+  <div id="skill-js" class="hidden lg:flex bg-deep-blue rounded-lg aspect-square flex flex-col items-center justify-center p-2">
+    <img src="/Icons8/icons8-js-96.png" alt="javascript" class="lg:h-30 lg:w-30">
+  </div>
+
+</div>
 
   <div class="mt-6 w-full max-w-lg lg:max-w-4xl bg-deep-blue rounded-xl px-8 py-6 flex flex-col items-center gap-4">
     <h3 class="text-highlight text-xs font-bold tracking-widest uppercase">Additional Skills</h3>
     <div class="flex flex-wrap justify-center lg: gap-6 lg:grid lg:grid-cols-7">
-      <img src="/Icons8/icons8-unreal-engine-50.png" class="lg:w-50" alt="Unreal Engine">
-      <img src="/Icons8/icons8-microsoft-word-2019-50.png" class=" lg:w-50" alt="microsoft word"/>
-      <img src="/Icons8/icons8-microsoft-powerpoint-2019-50.png" class="lg:w-50" alt="PowerPoint">
-      <img src="/Icons8/icons8-microsoft-excel-2019-50.png" class="lg:w-50" alt="Excel">
-      <img src="/Icons8/icons8-blender-3d-50.png" alt="Blender" class="lg:w-50">
-      <img src="/Icons8/icons8-c++-50.png" alt="c++" class="lg:w-50">
-      <img src="/Icons8/icons8-intelligent-person-50.png" alt="Hombre Inteligente" class="lg:w-50">
+      <img id="skill-Unreal" src="/Icons8/icons8-unreal-engine-50.png" class="lg:w-50" alt="Unreal Engine">
+      <img id="skill-word" src="/Icons8/icons8-microsoft-word-2019-50.png" class=" lg:w-50" alt="microsoft word"/>
+      <img id="skill-powerpoint" src="/Icons8/icons8-microsoft-powerpoint-2019-50.png" class="lg:w-50" alt="PowerPoint">
+      <img id="skill-excel" src="/Icons8/icons8-microsoft-excel-2019-50.png" class="lg:w-50" alt="Excel">
+      <img id="skill-blender" src="/Icons8/icons8-blender-3d-50.png" alt="Blender" class="lg:w-50">
+      <img id="skill-cpp" src="/Icons8/icons8-c++-50.png" alt="c++" class="lg:w-50">
+      <img id="skill-logica" src="/Icons8/icons8-intelligent-person-50.png" alt="Hombre Inteligente" class="lg:w-50">
     </div>
   </div>
 </section>
